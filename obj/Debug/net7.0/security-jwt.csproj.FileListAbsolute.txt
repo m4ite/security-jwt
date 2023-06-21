@@ -1,0 +1,12 @@
+C:\Users\disrct\Desktop\Projeto\security-jwt\bin\Debug\net7.0\security-jwt.deps.json
+C:\Users\disrct\Desktop\Projeto\security-jwt\bin\Debug\net7.0\security-jwt.dll
+C:\Users\disrct\Desktop\Projeto\security-jwt\bin\Debug\net7.0\security-jwt.pdb
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\security-jwt.csproj.AssemblyReference.cache
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\security-jwt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\security-jwt.AssemblyInfoInputs.cache
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\security-jwt.AssemblyInfo.cs
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\security-jwt.csproj.CoreCompileInputs.cache
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\security-jwt.dll
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\refint\security-jwt.dll
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\security-jwt.pdb
+C:\Users\disrct\Desktop\Projeto\security-jwt\obj\Debug\net7.0\ref\security-jwt.dll
