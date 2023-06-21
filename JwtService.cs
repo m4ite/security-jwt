@@ -26,7 +26,45 @@ public class JwtService : IJwtService
 
     public T Validate<T>(string jwt)
     {
-        throw new NotImplementedException();
+        var partes = jwt.Split(".");
+        if(partes.Length != 3)
+            throw new ArgumentException("Invalid jwt.");
+        
+        var header = partes[0];
+        var payload = partes[1];
+        var signature = partes[2];
+
+        var expectedSignature = getSignature(header, payload);
+        
+        bool ver = signature == expectedSignature;
+        if(!ver)
+            throw new ArgumentException("The given value was different of the expected signature");
+        
+        var json = base64toJson(payload);
+        var obj =  JsonSerializer.Deserialize<T>(json);
+        return obj;
+        
+    }
+
+    private string base64toJson(string base64)
+    {
+        var paddingBase64 = addPadding(base64);
+        byte[] bytes = Convert.FromBase64String(base64);
+        string json = Encoding.UTF8.GetString(bytes);
+        return json;
+    }
+    
+
+    private string addPadding(string base64)
+    {
+        int bits = base64.Length * 6;
+        while(bits % 8 != 8)
+        {
+            bits += 6;
+            base64 +="=";
+        }
+        
+        return base64;
     }
 
     private string getSignature(string header, string payload)
